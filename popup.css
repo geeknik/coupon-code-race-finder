@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  padding: 16px;
+}
+
+#test-form {
+  margin-bottom: 16px;
+}
+
+#test-form label,
+#test-form textarea,
+#test-form input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#test-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#test-form button:hover {
+  background-color: #3e8e41;
+}
+
+#results-container {
+  margin-top: 16px;
+}
