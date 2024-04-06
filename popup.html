@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coupon Code Race Finder</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Coupon Code Race Tester</h1>
+  <form id="test-form">
+    <label for="coupon-codes">Coupon Codes (one per line):</label>
+    <textarea id="coupon-codes" rows="3"></textarea>
+    <label for="input-field-regex">Input Field Regex:</label>
+    <input type="text" id="input-field-regex" value="input[type='text'][name='coupon_code'], input[type='text'][placeholder='Enter coupon code']">
+    <button type="submit">Test for Race Conditions</button>
+  </form>
+  <div id="results-container"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
