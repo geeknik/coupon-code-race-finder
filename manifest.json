@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Coupon Code Race Finder",
+  "version": "1.0",
+  "description": "Test for race conditions in coupon codes on approved bug bounty hosts.",
+  "permissions": ["activeTab", "storage", "<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
